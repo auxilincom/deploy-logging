@@ -1,0 +1,12 @@
+---
+- name: Setup app server
+  hosts: app
+  become: true
+  vars_files:
+    - "vars/main.yml"
+  roles:
+    - { role: angstwad.docker_ubuntu }
+  tasks:
+    - name: create app networks
+      docker_network:
+        name: "{{ app_network_name }}"

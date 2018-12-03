@@ -1,0 +1,13 @@
+{
+  "name": "deploy-logging",
+  "description": "Deploy fluentd for collecting data",
+  "author": "Auxilin",
+  "license": "MIT",
+  "devDependencies": {
+    "all-contributors-cli": "5.4.1"
+  },
+  "scripts": {
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate"
+  }
+}
